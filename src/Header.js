@@ -1,10 +1,10 @@
 import { Component } from "react";
 
 class Header extends Component {
-  redner() {
+  render() {
     return (
       <>
-        <p>This is my HEADER</p>
+        <h1>Majestic Horned Animals</h1>
       </>
     );
   }
