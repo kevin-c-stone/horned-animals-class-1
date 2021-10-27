@@ -16,7 +16,7 @@ class HornedBeasts extends Component {
 
   render() {
     return (
-      <>
+      <div class="card-box">
         <Card style={{ width: "18rem" }}>
           <Card.Img
             variant="top"
@@ -34,7 +34,7 @@ class HornedBeasts extends Component {
             </Button>
           </Card.Body>
         </Card>
-      </>
+      </div>
     );
   }
 }
