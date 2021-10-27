@@ -8,34 +8,34 @@ Here I am using React to render images to the page and add a title along with a 
 
 Name of Feature: Display Images
 
-Estimate time complete:
+Estimate time complete: 1hr 30min
 
-Start time:
+Start time: 1:00pm
 
-End time:
+End time: 2:15pm
 
-Actual Time:
+Actual Time: 1hr 15min
 
 ### Feature 2
 
 Name of Feature: Allow users to vote for their favorite beast
 
-Estimate time complete:
+Estimate time complete: 1hr
 
-Start time:
+Start time: 2:30pm
 
-End time:
+End time: 3:15pm
 
-Actual Time:
+Actual Time: 45min
 
 ### Feature 3
 
 Name of Feature: Bootstrap
 
-Estimate time complete:
+Estimate time complete: 2hrs
 
-Start time:
+Start time: 3:30pm
 
-End time:
+End time: 7:30pm
 
-Actual Time:
+Actual Time: 4hrs
