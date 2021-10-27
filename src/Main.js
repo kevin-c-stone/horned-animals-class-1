@@ -1,6 +1,7 @@
 import { Component } from "react";
 import HornedBeasts from "./HornedBeasts";
 import data from "./data.json";
+import CardGroup from "react-bootstrap/CardGroup";
 
 class Main extends Component {
   render() {
