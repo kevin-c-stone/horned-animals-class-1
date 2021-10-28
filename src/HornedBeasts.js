@@ -9,6 +9,7 @@ class HornedBeasts extends Component {
     super(props);
     this.state = {
       favorites: 0,
+      // Change state of animals here?
     };
   }
 
