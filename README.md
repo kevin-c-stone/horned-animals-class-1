@@ -39,3 +39,15 @@ Start time: 3:30pm
 End time: 7:30pm
 
 Actual Time: 4hrs
+
+### Feature 4
+
+Name of Feature: Bootstrap React Modal
+
+Estimate time complete: 3hrs
+
+Start time: 2:00pm
+
+End time:
+
+Actual Time:
