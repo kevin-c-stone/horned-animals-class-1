@@ -48,6 +48,6 @@ Estimate time complete: 3hrs
 
 Start time: 2:00pm
 
-End time:
+End time: 8:00pm
 
-Actual Time:
+Actual Time: 6hrs
