@@ -29,7 +29,7 @@ class HornedBeasts extends Component {
             src={this.props.animal.image_url}
             alt={this.props.animal.keyword}
             title={this.props.animal.title}
-            onClick={() => this.handleClickModal(this.props)}
+            onClick={() => this.handleClickModal(this.props.animal)}
           />
           <Card.Body>
             <Card.Title>{this.props.animal.title}</Card.Title>

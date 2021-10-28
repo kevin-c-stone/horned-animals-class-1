@@ -16,10 +16,13 @@ export default class SelectedBeast extends Component {
           <Modal.Header closeButton>
             <Modal.Title>{this.props.animal.title}</Modal.Title>
           </Modal.Header>
-          <Modal.Body
-            src={this.props.animal.image_url}
-            alt={this.props.animal.keyword}
-          />
+          <Modal.Body>
+            <img
+              src={this.props.animal.image_url}
+              alt={this.props.animal.keyword}
+              style={{ width: "100%" }}
+            />
+          </Modal.Body>
 
           <Modal.Body>{this.props.animal.description}</Modal.Body>
           <Modal.Footer>
