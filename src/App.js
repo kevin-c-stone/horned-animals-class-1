@@ -11,7 +11,7 @@ export default class App extends Component {
     this.state = {
       // render an individual beast in a Modal
       show: false,
-      animal: "",
+      animal: {},
     };
   }
 
@@ -21,7 +21,7 @@ export default class App extends Component {
     this.setState({ animal: val });
   };
 
-  hideModal = () => {
+  closeModal = () => {
     // set modal to show false
     this.setState({ show: false });
   };
@@ -36,7 +36,7 @@ export default class App extends Component {
           data={data}
           animal={this.state.animal}
           show={this.state.show}
-          hideModal={this.hideModal}
+          closeModal={this.closeModal}
         />
       </div>
     );

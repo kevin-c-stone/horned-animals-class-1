@@ -6,7 +6,7 @@ import Button from "react-bootstrap/Button";
 
 export default class SelectedBeast extends Component {
   handleClose = () => {
-    this.props.hideModal();
+    this.props.closeModal();
   };
 
   render() {
