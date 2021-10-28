@@ -1,21 +1,20 @@
 import { Component } from "react";
 import HornedBeasts from "./HornedBeasts";
-import data from "./data.json";
+import Row from "react-bootstrap/Row";
 
 class Main extends Component {
+  // function
+  showModal = (val) => {
+    this.props.showModal(val);
+  };
+
   render() {
     return (
-      <>
-        {data.map((animal) => (
-          <HornedBeasts
-            title={animal.title}
-            imageURL={animal.image_url}
-            description={animal.description}
-            keyword={animal.keyword}
-            horns={animal.horns}
-          />
+      <Row xs={1} sm={2} md={3} lg={4}>
+        {this.props.data.map((animal) => (
+          <HornedBeasts animal={animal} showModal={this.showModal} />
         ))}
-      </>
+      </Row>
     );
   }
 }
