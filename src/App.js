@@ -11,14 +11,14 @@ export default class App extends Component {
     this.state = {
       // render an individual beast in a Modal
       show: false,
-      animal: {},
+      featuredAnimal: {},
     };
   }
 
   showModal = (val) => {
     // set modal to show to true
     this.setState({ show: true });
-    this.setState({ animal: val });
+    this.setState({ featuredAnimal: val });
   };
 
   closeModal = () => {
@@ -33,8 +33,7 @@ export default class App extends Component {
         <Main data={data} showModal={this.showModal} />
         <Footer />
         <SelectedBeast
-          data={data}
-          animal={this.state.animal}
+          animal={this.state.featuredAnimal}
           show={this.state.show}
           closeModal={this.closeModal}
         />
