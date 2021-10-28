@@ -2,8 +2,6 @@ import React, { Component } from "react";
 import Modal from "react-bootstrap/Modal";
 import Button from "react-bootstrap/Button";
 
-// CHILD from lecture
-
 export default class SelectedBeast extends Component {
   handleClose = () => {
     this.props.closeModal();
@@ -20,7 +18,7 @@ export default class SelectedBeast extends Component {
             <img
               src={this.props.animal.image_url}
               alt={this.props.animal.keyword}
-              style={{ width: "100%" }}
+              style={{ width: "100%", height: "100%" }}
             />
           </Modal.Body>
 

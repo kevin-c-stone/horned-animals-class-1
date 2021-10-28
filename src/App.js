@@ -3,15 +3,16 @@ import Header from "./Header";
 import Main from "./Main.js";
 import Footer from "./Footer.js";
 import data from "./data.json";
-import SelectedBeast from "./SelectedBeast";
+import SelectedBeast from "./SelectedBeast.js";
+import HornedForm from "./HornedForm.js";
 
 export default class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      // render an individual beast in a Modal
       show: false,
       featuredAnimal: {},
+      showBeasts: data,
     };
   }
 
@@ -26,11 +27,30 @@ export default class App extends Component {
     this.setState({ show: false });
   };
 
+  filterBeasts = (selection) => {
+    let hornCount = selection;
+    let updatedHornArray;
+    // show beasts with one horn
+    if (hornCount === "one") {
+      updatedHornArray = data.filter((animal) => animal.horns === 1);
+      this.setState({ showBeasts: updatedHornArray });
+    } else if (hornCount === "two") {
+      updatedHornArray = data.filter((animal) => animal.horns === 2);
+      this.setState({ showBeasts: updatedHornArray });
+    } else if (hornCount === "three") {
+      updatedHornArray = data.filter((animal) => animal.horns >= 3);
+      this.setState({ showBeasts: updatedHornArray });
+    } else {
+      this.setState({ showBeasts: data });
+    }
+  };
+
   render() {
     return (
       <div>
         <Header />
-        <Main data={data} showModal={this.showModal} />
+        <HornedForm filterBeasts={this.filterBeasts} />
+        <Main data={this.state.showBeasts} showModal={this.showModal} />
         <Footer />
         <SelectedBeast
           animal={this.state.featuredAnimal}
